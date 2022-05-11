@@ -3,9 +3,17 @@
 /* Инверсный цвет текста #FFFFFF */
 /* Цвет акцента #2196F3 */
 
+:root{
+    --pr-text-color: #212121;
+    --sec-text-color: #757575;
+    --inv-text-color: #ffffff;
+    --accent-color: #2169f3;
+    --bcg-color: #ffffff;
+}
+
 body {
-    background-color: #FFFFFF;
-    color: #212121;
+    background-color: var(--bcg-color);
+    color: var(--pr-text-color);
 }
 
 /* основной стиль списков */
@@ -15,15 +23,21 @@ body {
 
 /* Site-nav */
 .site-nav .link {
-    color: #212121;
+    color: var(--pr-text-color);
 }
 
 .site-nav .link:hover, 
 .site-nav .link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
-/* Titles */
-.title {
-    color: #212121;
+/* Section */
+.section-title {
+    color: var(--pr-text-color);
+}
+
+/* Button */
+.button {
+    color: var(--pr-text-color);
+    background-color: var(--bcg-color);
 }
