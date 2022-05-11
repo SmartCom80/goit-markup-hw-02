@@ -68,3 +68,8 @@ body {
 .address .item {
     color: rgba(255, 255, 255, 0.6);
 }
+
+.address .item:hover,
+.address .item:focus {
+    color: var(--accent-color);
+}
