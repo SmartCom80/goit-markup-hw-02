@@ -1,0 +1,29 @@
+/* Основной цвет текста #212121 */
+/* Вторичный цвет текста #757575 */
+/* Инверсный цвет текста #FFFFFF */
+/* Цвет акцента #2196F3 */
+
+body {
+    background-color: #FFFFFF;
+    color: #212121;
+}
+
+/* основной стиль списков */
+.list {
+    list-style: none;
+}
+
+/* Site-nav */
+.site-nav .link {
+    color: #212121;
+}
+
+.site-nav .link:hover, 
+.site-nav .link:focus {
+    color: #2196F3;
+}
+
+/* Titles */
+.title {
+    color: #212121;
+}
