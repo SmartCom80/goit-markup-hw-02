@@ -8,15 +8,17 @@
     --sec-text-color: #757575;
     --inv-text-color: #ffffff;
     --accent-color: #2169f3;
-    --bcg-color: #ffffff;
+    --pr-bg-color: #ffffff;
+    --bt-bg-color: #F5F4FA;
+    --sec-bg-color: #2F303A;
 }
 
 body {
-    background-color: var(--bcg-color);
+    background-color: var(--pr-bg-color);
     color: var(--pr-text-color);
 }
 
-/* основной стиль списков */
+/* Основной стиль списков */
 .list {
     list-style: none;
 }
@@ -26,11 +28,19 @@ body {
     color: var(--pr-text-color);
 }
 
+.site-nav .link.current,
 .site-nav .link:hover, 
-.site-nav .link:focus {
+.site-nav .link:focus
+{
     color: var(--accent-color);
 }
 
+/* Auth-nav */
+.auth-nav .item:hover,
+.auth-nav .item:focus 
+{
+    color: var(--accent-color);
+}
 /* Section */
 .section-title {
     color: var(--pr-text-color);
@@ -39,5 +49,22 @@ body {
 /* Button */
 .button {
     color: var(--pr-text-color);
-    background-color: var(--bcg-color);
+    background-color: var(--bt-bg-color);
+}
+
+.button.primary,
+.button:hover,
+.button:focus {
+    color: var(--inv-text-color);
+    background-color: var(--accent-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--sec-bg-color);
+}
+
+/* Address */
+.address .item {
+    color: rgba(255, 255, 255, 0.6);
 }
