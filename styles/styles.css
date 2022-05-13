@@ -1,36 +1,36 @@
-/* Основной цвет текста #212121 */
-/* Вторичный цвет текста #757575 */
-/* Инверсный цвет текста #FFFFFF */
-/* Цвет акцента #2196F3 */
-
 :root{
+    /* Basic text style #212121 */
     --pr-text-color: #212121;
+    /* Secondary text style #757575 */
     --sec-text-color: #757575;
+    /* Inverse text style #FFFFFF */
     --inv-text-color: #ffffff;
+    /* Accent color #2196F3 */
     --accent-color: #2169f3;
+    /* Basic background color */
     --pr-bg-color: #ffffff;
-    --btn-bg-color: #F5F4FA;
+    /* Secondary background color */
     --sec-bg-color: #2F303A;
-}
+    /* Basic button background color */
+    --btn-bg-color: #F5F4FA;
+    }
 
 body {
     background-color: var(--pr-bg-color);
     color: var(--pr-text-color);
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-/* Основной стиль ссылок */
-
-
-/* Основной стиль списков */
+/* Basic style lists */
 .list {
     list-style: none;
 }
 
-/* Стиль логотипа */
+/* Logo style */
 .logo {
     color: var(--pr-text-color);
     font-family: 'Raleway', sans-serif;
@@ -43,6 +43,7 @@ body {
 .page-header.link {
     text-decoration-line: none;
 }
+
 .accent {
     color: var(--accent-color);
 }
@@ -99,7 +100,7 @@ body {
     color: var(--pr-text-color);
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.16;
+    line-height: 1.17;
     text-align: center;
 }
 
@@ -111,7 +112,8 @@ body {
 }
 
 /* Section Our Team */
-.section.team {
+.team-cards,
+.team-member {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -153,6 +155,13 @@ body {
     font-family: inherit;
 }
 
+.button.primary {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
 .button.primary,
 .button:hover,
 .button:focus {
@@ -178,7 +187,6 @@ body {
     font-size: 14px;
     font-style: normal;
     line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 
 .address.link {
