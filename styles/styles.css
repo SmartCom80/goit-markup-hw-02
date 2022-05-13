@@ -47,10 +47,6 @@ body {
     color: var(--accent-color);
 }
 
-.logo.footer {
-    color: var(--inv-text-color);
-}
-
 /* Site-nav */
 .site-nav .link {
     color: var(--pr-text-color);
@@ -167,6 +163,14 @@ body {
 /* Footer */
 .footer {
     background-color: var(--sec-bg-color);
+}
+
+.footer.link {
+    text-decoration-line: none;
+}
+
+.logo.footer {
+    color: var(--inv-text-color);
 }
 
 /* Address */
